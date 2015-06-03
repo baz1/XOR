@@ -28,6 +28,6 @@ xor my-private-file key > encrypted-file
 
 There is no simpler thing!
 
-1. Compile main.cpp (e.g. `gcc main.cpp -o xor`)
+1. Compile main.cpp (e.g. `g++ main.cpp -o xor`)
 
 2. Put the `xor` program somewhere in the PATH
