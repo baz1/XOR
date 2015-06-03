@@ -25,7 +25,7 @@ xor my-private-file key > encrypted-file
 xor encrypted-file key > decrypted-file
 ```
 
-A perhaps faster alternative for creating the key would be:
+A perhaps faster alternative for creating the key would be: (in bash)
 
 ```
 head --bytes=$(stat -c%s my-private-file) /dev/random > key
