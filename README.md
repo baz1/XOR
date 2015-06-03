@@ -27,5 +27,7 @@ xor my-private-file key > encrypted-file
 ## Installation
 
 There is no simpler thing!
+
 1. Compile main.cpp (e.g. `gcc main.cpp -o xor`)
+
 2. Put the `xor` program somewhere in the PATH
