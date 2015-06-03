@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
     while (true)
     {
         size_t r13 = fread(buffer13, sizeof(char), BUFFER_SIZE, f1);
-        size_t r2 = fread(buffer2, sizeof(char), BUFFER_SIZE, f2);
+        size_t r2 = fread(buffer2, sizeof(char), r13, f2);
         if (r2 < r13)
             r13 = r2;
         else

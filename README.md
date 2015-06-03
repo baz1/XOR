@@ -22,6 +22,13 @@ xor random-seed-1 random-seed-2 > mixed-rnd-seed
 ```
 xor my-private-file < /dev/random > key
 xor my-private-file key > encrypted-file
+xor encrypted-file key > decrypted-file
+```
+
+A perhaps faster alternative for creating the key would be:
+
+```
+head --bytes=$(stat -c%s my-private-file) /dev/random > key
 ```
 
 ## Installation
